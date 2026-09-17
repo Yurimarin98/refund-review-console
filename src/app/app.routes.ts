@@ -8,12 +8,12 @@ export const routes: Routes = [
     },
     {
         path: '',
-        redirectTo: `${BASE_ROUTE_URL}`,
+        redirectTo: `${BASE_ROUTE_URL}/list`,
         pathMatch: 'prefix'
     },
     {
         path: '**',
-        redirectTo: `${BASE_ROUTE_URL}`,
+        redirectTo: `${BASE_ROUTE_URL}/list`,
         pathMatch: 'prefix'
     }
 ];

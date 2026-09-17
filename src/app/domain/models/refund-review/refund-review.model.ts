@@ -1,7 +1,7 @@
 export type RiskLevelType = "LOW" | "HIGH" | "MEDIUM";
 export type StatusType = "PENDING" | "UNDER_REVIEW" | "APPROVED" | "REJECTED" | "ESCALATED";
 
-export interface RefoundRequest {
+export interface RefundReview {
     id: string;
     orderId: string;
     customerName: string;
@@ -12,6 +12,6 @@ export interface RefoundRequest {
     status: StatusType;
     requestedAt: Date;
     customerNote: string;
-    version: string;
+    version: number;
     reviewerNote?: string;
 }

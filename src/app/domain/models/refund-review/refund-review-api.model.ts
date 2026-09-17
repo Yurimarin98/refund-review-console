@@ -1,7 +1,7 @@
 export type RiskLevelType = "LOW" | "HIGH" | "MEDIUM";
 export type StatusType = "PENDING" | "UNDER_REVIEW" | "APPROVED" | "REJECTED" | "ESCALATED";
 
-export interface RefoundRequestApiDTO {
+export interface RefundReviewApiDTO {
     id: string;
     orderId: string;
     customerName: string;
@@ -12,7 +12,7 @@ export interface RefoundRequestApiDTO {
     status: StatusType;
     requestedAt: string;
     customerNote: string;
-    version: string;
+    version: number;
     reviewerNote?: string;
 
 }
